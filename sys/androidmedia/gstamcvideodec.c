@@ -373,8 +373,8 @@ gst_amc_video_dec_change_state (GstElement * element, GstStateChange transition)
   return ret;
 }
 
-#define MAX_FRAME_DIST_TIME  (5 * GST_SECOND)
-#define MAX_FRAME_DIST_FRAMES (100)
+#define MAX_FRAME_DIST_TIME  (10 * GST_SECOND)
+#define MAX_FRAME_DIST_FRAMES (500)
 
 static GstVideoCodecFrame *
 _find_nearest_frame (GstAmcVideoDec * self, GstClockTime reference_timestamp)
